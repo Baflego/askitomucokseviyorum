@@ -1815,13 +1815,15 @@
 
         /* ==========================
            9. TIKLAMA EASTER EGG
+           9 kez Barışmadım'a basınca şifre kutusu
+           hemen açılmaz. Barıştım'a basınca açılır.
         ========================== */
 
         if (
           clickCount === 9
         ) {
 
-          passwordEgg.classList.add(
+          passwordEgg.classList.remove(
             "show"
           );
 
@@ -2141,6 +2143,21 @@
       "click",
 
       function() {
+
+        /* 9 veya daha fazla kez Barışmadım'a basıldıysa
+           önce şifreli Easter Egg ekranını göster */
+        if (clickCount >= 9 && clickCount < 18) {
+
+          passwordEgg.style.display =
+            "block";
+
+          passwordEgg.classList.add(
+            "show"
+          );
+
+          return;
+
+        }
 
         startNormalEnding();
 
