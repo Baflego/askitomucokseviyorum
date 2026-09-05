@@ -12,7 +12,6 @@
 
   <title>Barışalım mı? ❤️</title>
 
-
   <style>
 
     * {
@@ -21,13 +20,11 @@
       padding: 0;
     }
 
-
     html,
     body {
       width: 100%;
       height: 100%;
     }
-
 
     body {
 
@@ -70,17 +67,13 @@
 
     }
 
-
-
     /* ==========================
        KALP YAĞMURU
     ========================== */
 
-
     #heartRain {
 
       position: fixed;
-
       inset: 0;
 
       width: 100%;
@@ -94,7 +87,6 @@
 
     }
 
-
     .heart {
 
       position: absolute;
@@ -106,73 +98,53 @@
       opacity: 0.7;
 
       animation-name: fall;
-
       animation-timing-function: linear;
-
       animation-iteration-count: infinite;
 
     }
 
-
     @keyframes fall {
 
       0% {
-
         transform:
           translateX(0)
           translateY(-100px)
           rotate(0deg);
-
       }
 
-
       25% {
-
         transform:
           translateX(35px)
           translateY(25vh)
           rotate(90deg);
-
       }
 
-
       50% {
-
         transform:
           translateX(-35px)
           translateY(50vh)
           rotate(180deg);
-
       }
 
-
       75% {
-
         transform:
           translateX(25px)
           translateY(75vh)
           rotate(270deg);
-
       }
 
-
       100% {
-
         transform:
           translateX(-15px)
           translateY(110vh)
           rotate(360deg);
-
       }
 
     }
 
-
-
     /* ==========================
        ANA EKRAN
     ========================== */
-
 
     .container {
 
@@ -181,7 +153,6 @@
       z-index: 5;
 
       width: 100%;
-
       max-width: 600px;
 
       text-align: center;
@@ -189,7 +160,6 @@
       padding: 22px;
 
     }
-
 
     #introContent {
 
@@ -201,33 +171,27 @@
 
     }
 
-
     h1 {
 
       font-size: 36px;
-
       line-height: 1.15;
 
       margin-bottom: 18px;
 
     }
 
-
     .message-text {
 
       font-size: 19px;
-
       line-height: 1.5;
 
       margin-bottom: 18px;
 
     }
 
-
     .relationship-start {
 
       font-size: 17px;
-
       line-height: 1.45;
 
       margin:
@@ -237,12 +201,9 @@
 
     }
 
-
-
     /* ==========================
        BUTONLAR
     ========================== */
-
 
     .buttons {
 
@@ -253,7 +214,6 @@
       display: flex;
 
       justify-content: center;
-
       align-items: center;
 
       gap: 14px;
@@ -261,7 +221,6 @@
       padding: 10px 0;
 
     }
-
 
     button {
 
@@ -292,7 +251,6 @@
 
     }
 
-
     #yesButton {
 
       width: 140px;
@@ -316,7 +274,6 @@
       white-space: nowrap;
 
     }
-
 
     #noButton {
 
@@ -349,12 +306,9 @@
 
     }
 
-
-
     /* ==========================
        LALE + FOTOĞRAF EKRANI
     ========================== */
-
 
     #flowerScene {
 
@@ -365,13 +319,11 @@
       inset: 0;
 
       width: 100%;
-
       height: 100dvh;
 
       z-index: 500;
 
       justify-content: center;
-
       align-items: center;
 
       flex-direction: column;
@@ -387,23 +339,19 @@
 
     }
 
-
     .flower-wrapper {
 
       position: relative;
 
       width: 300px;
-
       height: 430px;
 
       display: flex;
 
       justify-content: center;
-
       align-items: center;
 
     }
-
 
     .tulip {
 
@@ -432,7 +380,6 @@
 
     }
 
-
     @keyframes tulipOpen {
 
       0% {
@@ -445,7 +392,6 @@
 
       }
 
-
       65% {
 
         transform:
@@ -455,7 +401,6 @@
         opacity: 1;
 
       }
-
 
       100% {
 
@@ -469,17 +414,11 @@
 
     }
 
-
-
-    /* FOTOĞRAF */
-
-
     .couple-photo {
 
       position: absolute;
 
       width: 150px;
-
       height: 150px;
 
       object-fit: cover;
@@ -512,7 +451,6 @@
 
     }
 
-
     @keyframes photoComeOut {
 
       0% {
@@ -525,7 +463,6 @@
 
       }
 
-
       60% {
 
         opacity: 1;
@@ -535,7 +472,6 @@
           translateY(-5px);
 
       }
-
 
       100% {
 
@@ -548,7 +484,6 @@
       }
 
     }
-
 
     .flower-text {
 
@@ -574,7 +509,6 @@
 
     }
 
-
     @keyframes flowerText {
 
       to {
@@ -588,12 +522,9 @@
 
     }
 
-
-
     /* ==========================
        SON EKRAN
     ========================== */
-
 
     #finalMessage {
 
@@ -604,7 +535,6 @@
       z-index: 5;
 
       width: 100%;
-
       max-width: 600px;
 
       padding: 22px;
@@ -618,7 +548,6 @@
 
     }
 
-
     #finalMessage.show {
 
       display: block;
@@ -630,7 +559,6 @@
         forwards;
 
     }
-
 
     @keyframes finalOpen {
 
@@ -644,7 +572,6 @@
 
       }
 
-
       to {
 
         opacity: 1;
@@ -657,7 +584,6 @@
 
     }
 
-
     #finalMessage h2 {
 
       font-size: 42px;
@@ -667,7 +593,6 @@
       margin-bottom: 18px;
 
     }
-
 
     .love-message {
 
@@ -679,12 +604,9 @@
 
     }
 
-
-
     /* ==========================
-       5. AY SAYAÇ KUTUSU
+       5. AY SAYAÇ
     ========================== */
-
 
     .countdown-box {
 
@@ -733,7 +655,6 @@
 
     }
 
-
     .countdown-box h3 {
 
       font-size: 18px;
@@ -743,7 +664,6 @@
       line-height: 1.3;
 
     }
-
 
     #countdown {
 
@@ -757,7 +677,6 @@
 
     }
 
-
     .start-date {
 
       font-size: 12px;
@@ -768,12 +687,9 @@
 
     }
 
-
-
     /* ==========================
        SÜRPRİZ MESAJ
     ========================== */
-
 
     .secret-box {
 
@@ -782,7 +698,6 @@
       text-align: center;
 
     }
-
 
     #secretButton {
 
@@ -815,7 +730,6 @@
 
     }
 
-
     @keyframes secretPulse {
 
       0%,
@@ -826,7 +740,6 @@
 
       }
 
-
       50% {
 
         transform:
@@ -835,7 +748,6 @@
       }
 
     }
-
 
     #secretMessage {
 
@@ -893,7 +805,6 @@
 
     }
 
-
     #secretMessage.open {
 
       display: block;
@@ -905,7 +816,6 @@
         forwards;
 
     }
-
 
     @keyframes secretOpen {
 
@@ -920,16 +830,12 @@
 
     }
 
-
-
     /* ==========================
        IPHONE 16
     ========================== */
 
-
     @media
     (max-width: 430px) {
-
 
       .container {
 
@@ -939,7 +845,6 @@
           18px 16px;
 
       }
-
 
       h1 {
 
@@ -951,7 +856,6 @@
 
       }
 
-
       .message-text {
 
         font-size: 16px;
@@ -961,7 +865,6 @@
         margin-bottom: 15px;
 
       }
-
 
       .relationship-start {
 
@@ -975,7 +878,6 @@
 
       }
 
-
       .buttons {
 
         width: 100%;
@@ -987,7 +889,6 @@
         padding: 6px 0;
 
       }
-
 
       #yesButton {
 
@@ -1001,7 +902,6 @@
         font-size: 17px;
 
       }
-
 
       #noButton {
 
@@ -1026,7 +926,6 @@
 
       }
 
-
       .flower-wrapper {
 
         width: 280px;
@@ -1035,13 +934,11 @@
 
       }
 
-
       .tulip {
 
         font-size: 225px;
 
       }
-
 
       .couple-photo {
 
@@ -1055,13 +952,11 @@
 
       }
 
-
       .flower-text {
 
         font-size: 20px;
 
       }
-
 
       #finalMessage {
 
@@ -1070,13 +965,11 @@
 
       }
 
-
       #finalMessage h2 {
 
         font-size: 32px;
 
       }
-
 
       .love-message {
 
@@ -1089,7 +982,6 @@
 
       }
 
-
       .countdown-box {
 
         width: 94%;
@@ -1101,20 +993,17 @@
 
       }
 
-
       .countdown-box h3 {
 
         font-size: 16px;
 
       }
 
-
       #countdown {
 
         font-size: 14px;
 
       }
-
 
       #secretButton {
 
@@ -1124,7 +1013,6 @@
           10px 15px;
 
       }
-
 
       #secretMessage {
 
@@ -1136,43 +1024,24 @@
 
     }
 
-
   </style>
 
 </head>
 
-
-
 <body>
 
-
-
-  <!-- KALP YAĞMURU -->
-
   <div id="heartRain"></div>
-
-
-
-  <!-- ==========================
-       ANA EKRAN
-  ========================== -->
-
 
   <div
     class="container"
     id="question"
   >
 
-
     <div id="introContent">
 
-
       <h1>
-
         Askitomm Benimle Barışırmısınnnn? 🥺❤️
-
       </h1>
-
 
       <p class="message-text">
 
@@ -1184,67 +1053,41 @@
 
       </p>
 
-
       <p class="relationship-start">
 
         Buda benim yeniden doğuş tarihimmmm seninle sevgili olduğumda yeniden doğdumdaaaaa
 
         <strong>
-
           21.04.2026
-
         </strong>
 
         :D ❤️
 
       </p>
 
-
     </div>
-
-
 
     <div class="buttons">
 
-
       <button id="yesButton">
-
         Barıştım ❤️
-
       </button>
-
 
       <button id="noButton">
-
         Barışmadım 😒
-
       </button>
-
 
     </div>
 
-
   </div>
-
-
-
-  <!-- ==========================
-       LALE + FOTOĞRAF
-  ========================== -->
-
 
   <div id="flowerScene">
 
-
     <div class="flower-wrapper">
 
-
       <div class="tulip">
-
         🌷
-
       </div>
-
 
       <img
         src="./biz.jpeg"
@@ -1252,35 +1095,19 @@
         alt="Biz"
       >
 
-
       <div class="flower-text">
-
         baristik o zaman 🌷❤️
-
       </div>
-
 
     </div>
 
-
   </div>
-
-
-
-  <!-- ==========================
-       SON EKRAN
-  ========================== -->
-
 
   <div id="finalMessage">
 
-
     <h2>
-
       yaaaa baristikmi simdii ❤️
-
     </h2>
-
 
     <p class="love-message">
 
@@ -1292,55 +1119,31 @@
 
     </p>
 
-
-
-    <!-- 5. AY SAYAÇ -->
-
-
     <div class="countdown-box">
 
-
       <h3>
-
         Aşkitommm 5. ayımıza
         bu kadar kaldııı ❤️
-
       </h3>
 
-
       <div id="countdown">
-
         Hesaplanıyor...
-
       </div>
 
-
       <p class="start-date">
-
-        21.04.2026 ❤️ 21.10.2026
-
+        21.04.2026 ❤️ 21.09.2026
       </p>
-
 
     </div>
 
-
-
-    <!-- SÜRPRİZ MESAJ -->
-
-
     <div class="secret-box">
-
 
       <button
         id="secretButton"
         onclick="showSecret()"
       >
-
         Sana bişey söyleycem 💌
-
       </button>
-
 
       <div id="secretMessage">
 
@@ -1352,133 +1155,88 @@
 
         <br><br>
 
-        seni coooooook seviyorummmm ❤️
+        seni coooooook seviyorummmm❤️
 
       </div>
 
-
     </div>
-
 
   </div>
 
-
-
-
   <script>
 
-
-
-    /* ==========================
-       KALP YAĞMURU
-    ========================== */
-
-
     const heartRain =
-
       document.getElementById(
         "heartRain"
       );
 
-
-
     function createHeart() {
 
-
       const heart =
-
         document.createElement(
           "div"
         );
-
 
       heart.classList.add(
         "heart"
       );
 
-
       const hearts = [
-
         "❤️",
         "💕",
         "💗",
         "💖",
         "💓",
         "💘"
-
       ];
 
-
       heart.innerText =
-
         hearts[
-
           Math.floor(
-
             Math.random()
             * hearts.length
-
           )
-
         ];
 
-
       heart.style.left =
-
         Math.random()
         * 100
         + "vw";
 
-
       const size =
-
         Math.random()
         * 25
         + 15;
 
-
       heart.style.fontSize =
-
         size + "px";
 
-
       const duration =
-
         Math.random()
         * 5
         + 6;
 
-
       heart.style.animationDuration =
-
         duration + "s";
 
-
       heart.style.animationDelay =
-
         Math.random()
         * -10
         + "s";
 
-
       heart.style.opacity =
-
         Math.random()
         * 0.5
         + 0.3;
-
 
       heartRain.appendChild(
         heart
       );
 
-
       setTimeout(
 
         function() {
-
           heart.remove();
-
         },
 
         duration
@@ -1488,91 +1246,55 @@
 
     }
 
-
-
     for (
       let i = 0;
       i < 30;
       i++
     ) {
-
       createHeart();
-
     }
-
-
 
     setInterval(
 
       function() {
-
         createHeart();
-
       },
 
       400
 
     );
 
-
-
-
-    /* ==========================
-       ELEMENTLER
-    ========================== */
-
-
     const yesButton =
-
       document.getElementById(
         "yesButton"
       );
 
-
     const noButton =
-
       document.getElementById(
         "noButton"
       );
 
-
     const question =
-
       document.getElementById(
         "question"
       );
 
-
     const introContent =
-
       document.getElementById(
         "introContent"
       );
 
-
     const flowerScene =
-
       document.getElementById(
         "flowerScene"
       );
 
-
     const finalMessage =
-
       document.getElementById(
         "finalMessage"
       );
 
-
     let clickCount = 0;
-
-
-
-
-    /* ==========================
-       BARIŞMADIM BUTONU
-    ========================== */
-
 
     noButton.addEventListener(
 
@@ -1580,38 +1302,24 @@
 
       function() {
 
-
         clickCount++;
-
-
-
-        /* İlk tıklamada yazılar gider */
-
 
         if (
           clickCount === 1
         ) {
 
-
           introContent.style.opacity =
-
             "0";
 
-
           introContent.style.transform =
-
             "translateY(-15px)";
-
 
           setTimeout(
 
             function() {
 
-
               introContent.style.display =
-
                 "none";
-
 
             },
 
@@ -1619,300 +1327,176 @@
 
           );
 
-
         }
 
-
-
         const isMobile =
-
           window.innerWidth
           <= 430;
-
-
-
-        /* ==========================
-           BARIŞTIM YAVAŞÇA BÜYÜR
-        ========================== */
-
 
         if (
           isMobile
         ) {
 
-
           const yesWidth =
-
             Math.min(
-
               130 +
               clickCount * 5,
-
               215
-
             );
-
 
           const yesHeight =
-
             Math.min(
-
               54 +
               clickCount * 1.2,
-
               75
-
             );
-
 
           const yesFont =
-
             Math.min(
-
               17 +
               clickCount * 0.35,
-
               23
-
             );
 
-
           yesButton.style.width =
-
             yesWidth + "px";
 
-
           yesButton.style.minHeight =
-
             yesHeight + "px";
 
-
           yesButton.style.fontSize =
-
             yesFont + "px";
-
 
         }
 
-
         else {
 
-
           const yesWidth =
-
             Math.min(
-
               140 +
               clickCount * 9,
-
               300
-
             );
-
 
           const yesHeight =
-
             Math.min(
-
               58 +
               clickCount * 1.5,
-
               85
-
             );
 
-
           yesButton.style.width =
-
             yesWidth + "px";
 
-
           yesButton.style.minHeight =
-
             yesHeight + "px";
 
-
           yesButton.style.fontSize =
-
             (
               19 +
               clickCount * 0.5
             )
             + "px";
 
-
         }
-
-
-
-        /* ==========================
-           BARIŞMADIM YAZILARI
-        ========================== */
-
 
         const texts = [
 
-
           "Emin misin askimm? 🥺",
-
 
           "Gerçekten mi askim? 😭",
 
-
           "yaa barismicazmi 🥲",
-
 
           "ama askitom ya😭",
 
-
           "ama daha 14 kere basman gerekicek 😔",
-
 
           "cunku cankirinin plakası kadar basicaksin 😊",
 
-
           "yaanii 18 kere toplamdaaa 😜",
-
 
           "ama ben seni cok seviyorum ❤️",
 
-
           "bi kere daha düşünsen barismayı 🥹",
-
 
           "ben seninle küs kalmak istemiyorumkineee 😭",
 
-
           "Bence Barıştım daha güzel ❤️",
-
 
           "Hadi aşkitommm 🥺",
 
-
           "Bunu bana yapmaaa 😭",
-
 
           "Gerçekten son kararın mı? 🥲",
 
-
           "Hâlâ vazgeçmedin mi 😭",
-
 
           "Aşkitom bir daha düşün 🥺❤️",
 
-
           "Bak Barıştım baya büyüdü 😭",
-
 
           "Baristikkk kurban olduğumm ara benii ❤️"
 
-
         ];
-
-
 
         if (
           clickCount <=
           texts.length
         ) {
 
-
           noButton.innerText =
-
             texts[
               clickCount - 1
             ];
 
-
         }
-
-
-
-
-        /* ==========================
-           18. TIKLAMA
-        ========================== */
-
 
         if (
           clickCount >= 18
         ) {
 
-
           yesButton.style.position =
-
             "fixed";
 
-
           yesButton.style.top =
-
             "0";
-
 
           yesButton.style.left =
-
             "0";
-
 
           yesButton.style.width =
-
             "100vw";
 
-
           yesButton.style.height =
-
             "100dvh";
 
-
           yesButton.style.margin =
-
             "0";
-
 
           yesButton.style.padding =
-
             "0";
-
 
           yesButton.style.borderRadius =
-
             "0";
 
-
           yesButton.style.fontSize =
-
             "36px";
 
-
           yesButton.style.zIndex =
-
             "1000";
 
-
           yesButton.innerText =
-
             "TAMAM TAMAM BARIŞTIK ❤️";
 
-
           noButton.style.display =
-
             "none";
 
-
         }
-
 
       }
 
     );
-
-
-
-
-    /* ==========================
-       BARIŞTIM BUTONU
-    ========================== */
-
 
     yesButton.addEventListener(
 
@@ -1920,50 +1504,28 @@
 
       function() {
 
-
         question.style.display =
-
           "none";
-
 
         yesButton.style.display =
-
           "none";
-
 
         noButton.style.display =
-
           "none";
 
-
-        /* Lale ekranını aç */
-
-
         flowerScene.style.display =
-
           "flex";
-
-
-
-        /* 4 saniye sonra final ekran */
-
 
         setTimeout(
 
           function() {
 
-
             flowerScene.style.display =
-
               "none";
 
-
             finalMessage.classList.add(
-
               "show"
-
             );
-
 
           },
 
@@ -1971,46 +1533,31 @@
 
         );
 
-
       }
 
     );
 
-
-
-
     /* ==========================
        5. AY GERİ SAYIM
-       21 EKİM 2026
+       21 EYLÜL 2026
     ========================== */
 
-
     const anniversaryDate =
-
       new Date(
-        "2026-10-21T00:00:00"
+        "2026-09-21T00:00:00"
       );
-
-
 
     function updateCountdown() {
 
-
       const now =
-
         new Date();
 
-
       const difference =
-
         anniversaryDate - now;
-
-
 
       if (
         difference <= 0
       ) {
-
 
         document
           .getElementById(
@@ -2020,87 +1567,57 @@
 
           "5. AYIMIZ KUTLU OLSUN AŞKİTOMMM ❤️";
 
-
         return;
-
 
       }
 
-
-
       const days =
-
         Math.floor(
-
           difference /
-
           (
             1000 *
             60 *
             60 *
             24
           )
-
         );
 
-
-
       const hours =
-
         Math.floor(
-
           (
             difference /
-
             (
               1000 *
               60 *
               60
             )
-
           ) % 24
-
         );
 
-
-
       const minutes =
-
         Math.floor(
-
           (
             difference /
-
             (
               1000 *
               60
             )
-
           ) % 60
-
         );
 
-
-
       const seconds =
-
         Math.floor(
-
           (
             difference /
             1000
           ) % 60
-
         );
-
-
 
       document
         .getElementById(
           "countdown"
         )
         .innerHTML =
-
 
         days +
         " Gün&nbsp;•&nbsp;" +
@@ -2114,64 +1631,37 @@
         seconds +
         " Saniye ❤️";
 
-
     }
-
-
 
     updateCountdown();
 
-
     setInterval(
-
       updateCountdown,
-
       1000
-
     );
-
-
-
-
-    /* ==========================
-       SÜRPRİZ MESAJ
-    ========================== */
-
 
     function showSecret() {
 
-
       const secretMessage =
-
         document.getElementById(
           "secretMessage"
         );
 
-
       const secretButton =
-
         document.getElementById(
           "secretButton"
         );
 
-
       secretMessage.classList.add(
-
         "open"
-
       );
 
-
       secretButton.style.display =
-
         "none";
-
 
     }
 
-
   </script>
-
 
 </body>
 
