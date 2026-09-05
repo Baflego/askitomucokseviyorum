@@ -56,10 +56,17 @@
 
       position: relative;
 
-      padding-top: env(safe-area-inset-top);
-      padding-bottom: env(safe-area-inset-bottom);
-      padding-left: env(safe-area-inset-left);
-      padding-right: env(safe-area-inset-right);
+      padding-top:
+        env(safe-area-inset-top);
+
+      padding-bottom:
+        env(safe-area-inset-bottom);
+
+      padding-left:
+        env(safe-area-inset-left);
+
+      padding-right:
+        env(safe-area-inset-right);
 
     }
 
@@ -69,9 +76,11 @@
        KALP YAĞMURU
     ========================== */
 
+
     #heartRain {
 
       position: fixed;
+
       inset: 0;
 
       width: 100%;
@@ -97,7 +106,9 @@
       opacity: 0.7;
 
       animation-name: fall;
+
       animation-timing-function: linear;
+
       animation-iteration-count: infinite;
 
     }
@@ -106,38 +117,52 @@
     @keyframes fall {
 
       0% {
+
         transform:
           translateX(0)
           translateY(-100px)
           rotate(0deg);
+
       }
 
+
       25% {
+
         transform:
           translateX(35px)
           translateY(25vh)
           rotate(90deg);
+
       }
 
+
       50% {
+
         transform:
           translateX(-35px)
           translateY(50vh)
           rotate(180deg);
+
       }
 
+
       75% {
+
         transform:
           translateX(25px)
           translateY(75vh)
           rotate(270deg);
+
       }
 
+
       100% {
+
         transform:
           translateX(-15px)
           translateY(110vh)
           rotate(360deg);
+
       }
 
     }
@@ -148,6 +173,7 @@
        ANA EKRAN
     ========================== */
 
+
     .container {
 
       position: relative;
@@ -155,6 +181,7 @@
       z-index: 5;
 
       width: 100%;
+
       max-width: 600px;
 
       text-align: center;
@@ -203,7 +230,8 @@
 
       line-height: 1.45;
 
-      margin: 0 auto 24px auto;
+      margin:
+        0 auto 24px auto;
 
       max-width: 550px;
 
@@ -215,6 +243,7 @@
        BUTONLAR
     ========================== */
 
+
     .buttons {
 
       width: 100%;
@@ -224,6 +253,7 @@
       display: flex;
 
       justify-content: center;
+
       align-items: center;
 
       gap: 14px;
@@ -243,7 +273,10 @@
 
       font-weight: 600;
 
-      -webkit-tap-highlight-color: transparent;
+      font-family: inherit;
+
+      -webkit-tap-highlight-color:
+        transparent;
 
       box-shadow:
         0 8px 20px
@@ -254,7 +287,8 @@
         min-height 0.35s ease,
         font-size 0.35s ease,
         padding 0.35s ease,
-        border-radius 0.35s ease;
+        border-radius 0.35s ease,
+        transform 0.35s ease;
 
     }
 
@@ -265,11 +299,13 @@
 
       min-height: 58px;
 
-      padding: 12px 18px;
+      padding:
+        12px 18px;
 
       font-size: 19px;
 
-      background: #ff3b6b;
+      background:
+        #ff3b6b;
 
       color: white;
 
@@ -290,7 +326,8 @@
 
       height: auto;
 
-      padding: 12px 10px;
+      padding:
+        12px 10px;
 
       font-size: 17px;
 
@@ -315,8 +352,9 @@
 
 
     /* ==========================
-       LALE + FOTOĞRAF
+       LALE + FOTOĞRAF EKRANI
     ========================== */
+
 
     #flowerScene {
 
@@ -327,11 +365,13 @@
       inset: 0;
 
       width: 100%;
+
       height: 100dvh;
 
       z-index: 500;
 
       justify-content: center;
+
       align-items: center;
 
       flex-direction: column;
@@ -353,11 +393,13 @@
       position: relative;
 
       width: 300px;
+
       height: 430px;
 
       display: flex;
 
       justify-content: center;
+
       align-items: center;
 
     }
@@ -371,7 +413,8 @@
 
       font-size: 250px;
 
-      transform: scale(0);
+      transform:
+        scale(0);
 
       opacity: 0;
 
@@ -402,6 +445,7 @@
 
       }
 
+
       65% {
 
         transform:
@@ -411,6 +455,7 @@
         opacity: 1;
 
       }
+
 
       100% {
 
@@ -426,22 +471,23 @@
 
 
 
-    /* ==========================
-       FOTOĞRAF
-    ========================== */
+    /* FOTOĞRAF */
+
 
     .couple-photo {
 
       position: absolute;
 
       width: 150px;
+
       height: 150px;
 
       object-fit: cover;
 
       border-radius: 50%;
 
-      border: 6px solid white;
+      border:
+        6px solid white;
 
       box-shadow:
         0 12px 35px
@@ -479,6 +525,7 @@
 
       }
 
+
       60% {
 
         opacity: 1;
@@ -488,6 +535,7 @@
           translateY(-5px);
 
       }
+
 
       100% {
 
@@ -546,6 +594,7 @@
        SON EKRAN
     ========================== */
 
+
     #finalMessage {
 
       display: none;
@@ -555,6 +604,7 @@
       z-index: 5;
 
       width: 100%;
+
       max-width: 600px;
 
       padding: 22px;
@@ -594,6 +644,7 @@
 
       }
 
+
       to {
 
         opacity: 1;
@@ -631,8 +682,9 @@
 
 
     /* ==========================
-       SAYAÇ
+       5. AY SAYAÇ KUTUSU
     ========================== */
+
 
     .countdown-box {
 
@@ -640,7 +692,8 @@
 
       max-width: 430px;
 
-      margin: 18px auto 0 auto;
+      margin:
+        18px auto 0 auto;
 
       padding: 15px;
 
@@ -663,9 +716,11 @@
 
       border-radius: 18px;
 
-      backdrop-filter: blur(8px);
+      backdrop-filter:
+        blur(8px);
 
-      -webkit-backdrop-filter: blur(8px);
+      -webkit-backdrop-filter:
+        blur(8px);
 
       box-shadow:
         0 8px 25px
@@ -716,10 +771,164 @@
 
 
     /* ==========================
+       SÜRPRİZ MESAJ
+    ========================== */
+
+
+    .secret-box {
+
+      margin-top: 18px;
+
+      text-align: center;
+
+    }
+
+
+    #secretButton {
+
+      width: auto;
+
+      min-height: 48px;
+
+      padding:
+        11px 18px;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.78
+        );
+
+      color:
+        #ff3b6b;
+
+      font-size: 15px;
+
+      border-radius: 15px;
+
+      animation:
+        secretPulse
+        1.8s
+        infinite;
+
+    }
+
+
+    @keyframes secretPulse {
+
+      0%,
+      100% {
+
+        transform:
+          scale(1);
+
+      }
+
+
+      50% {
+
+        transform:
+          scale(1.05);
+
+      }
+
+    }
+
+
+    #secretMessage {
+
+      display: none;
+
+      max-width: 340px;
+
+      margin:
+        15px auto 0 auto;
+
+      padding: 16px;
+
+      background:
+        rgba(
+          255,
+          255,
+          255,
+          0.52
+        );
+
+      border:
+        1px solid
+        rgba(
+          255,
+          255,
+          255,
+          0.6
+        );
+
+      border-radius: 18px;
+
+      font-size: 15px;
+
+      line-height: 1.5;
+
+      opacity: 0;
+
+      transform:
+        translateY(15px);
+
+      box-shadow:
+        0 8px 20px
+        rgba(
+          0,
+          0,
+          0,
+          0.08
+        );
+
+      backdrop-filter:
+        blur(8px);
+
+      -webkit-backdrop-filter:
+        blur(8px);
+
+    }
+
+
+    #secretMessage.open {
+
+      display: block;
+
+      animation:
+        secretOpen
+        0.6s
+        ease
+        forwards;
+
+    }
+
+
+    @keyframes secretOpen {
+
+      to {
+
+        opacity: 1;
+
+        transform:
+          translateY(0);
+
+      }
+
+    }
+
+
+
+    /* ==========================
        IPHONE 16
     ========================== */
 
-    @media (max-width: 430px) {
+
+    @media
+    (max-width: 430px) {
 
 
       .container {
@@ -786,7 +995,8 @@
 
         min-height: 54px;
 
-        padding: 11px 14px;
+        padding:
+          11px 14px;
 
         font-size: 17px;
 
@@ -801,7 +1011,8 @@
 
         height: auto;
 
-        padding: 11px 8px;
+        padding:
+          11px 8px;
 
         font-size: 15px;
 
@@ -819,6 +1030,7 @@
       .flower-wrapper {
 
         width: 280px;
+
         height: 410px;
 
       }
@@ -834,6 +1046,7 @@
       .couple-photo {
 
         width: 135px;
+
         height: 135px;
 
         top: 82px;
@@ -883,7 +1096,8 @@
 
         max-width: 350px;
 
-        padding: 13px 10px;
+        padding:
+          13px 10px;
 
       }
 
@@ -901,6 +1115,25 @@
 
       }
 
+
+      #secretButton {
+
+        font-size: 14px;
+
+        padding:
+          10px 15px;
+
+      }
+
+
+      #secretMessage {
+
+        width: 94%;
+
+        font-size: 14px;
+
+      }
+
     }
 
 
@@ -909,11 +1142,12 @@
 </head>
 
 
+
 <body>
 
 
 
-  <!-- KALPLER -->
+  <!-- KALP YAĞMURU -->
 
   <div id="heartRain"></div>
 
@@ -922,6 +1156,7 @@
   <!-- ==========================
        ANA EKRAN
   ========================== -->
+
 
   <div
     class="container"
@@ -997,6 +1232,7 @@
        LALE + FOTOĞRAF
   ========================== -->
 
+
   <div id="flowerScene">
 
 
@@ -1010,15 +1246,11 @@
       </div>
 
 
-
-      <!-- FOTOĞRAF BURADA -->
-
       <img
         src="./biz.jpeg"
         class="couple-photo"
         alt="Biz"
       >
-
 
 
       <div class="flower-text">
@@ -1038,6 +1270,7 @@
   <!-- ==========================
        SON EKRAN
   ========================== -->
+
 
   <div id="finalMessage">
 
@@ -1060,12 +1293,16 @@
     </p>
 
 
+
+    <!-- 5. AY SAYAÇ -->
+
+
     <div class="countdown-box">
 
 
       <h3>
 
-        Aşkitommm 1. yılımıza
+        Aşkitommm 5. ayımıza
         bu kadar kaldııı ❤️
 
       </h3>
@@ -1080,9 +1317,44 @@
 
       <p class="start-date">
 
-        21.04.2026 ❤️ 21.04.2027
+        21.04.2026 ❤️ 21.10.2026
 
       </p>
+
+
+    </div>
+
+
+
+    <!-- SÜRPRİZ MESAJ -->
+
+
+    <div class="secret-box">
+
+
+      <button
+        id="secretButton"
+        onclick="showSecret()"
+      >
+
+        Sana bişey söyleycem 💌
+
+      </button>
+
+
+      <div id="secretMessage">
+
+        iyi ki hayatıma girdinn askitommm 🥹❤️
+
+        <br><br>
+
+        seninle geçirdiğim her gün benim için çok değerlüüüü
+
+        <br><br>
+
+        seni coooooook seviyorummmm ❤️
+
+      </div>
 
 
     </div>
@@ -1298,7 +1570,7 @@
 
 
     /* ==========================
-       BARIŞMADIM
+       BARIŞMADIM BUTONU
     ========================== */
 
 
@@ -1311,6 +1583,9 @@
 
         clickCount++;
 
+
+
+        /* İlk tıklamada yazılar gider */
 
 
         if (
@@ -1351,12 +1626,13 @@
 
         const isMobile =
 
-          window.innerWidth <= 430;
+          window.innerWidth
+          <= 430;
 
 
 
         /* ==========================
-           BARIŞTIM YAVAŞ BÜYÜR
+           BARIŞTIM YAVAŞÇA BÜYÜR
         ========================== */
 
 
@@ -1469,7 +1745,6 @@
 
 
 
-
         /* ==========================
            BARIŞMADIM YAZILARI
         ========================== */
@@ -1555,7 +1830,7 @@
 
 
         /* ==========================
-           18. BASIŞTA TAM EKRAN
+           18. TIKLAMA
         ========================== */
 
 
@@ -1635,7 +1910,7 @@
 
 
     /* ==========================
-       BARIŞTIM
+       BARIŞTIM BUTONU
     ========================== */
 
 
@@ -1661,9 +1936,16 @@
           "none";
 
 
+        /* Lale ekranını aç */
+
+
         flowerScene.style.display =
 
           "flex";
+
+
+
+        /* 4 saniye sonra final ekran */
 
 
         setTimeout(
@@ -1698,14 +1980,15 @@
 
 
     /* ==========================
-       1. YIL SAYACI
+       5. AY GERİ SAYIM
+       21 EKİM 2026
     ========================== */
 
 
     const anniversaryDate =
 
       new Date(
-        "2027-04-21T00:00:00"
+        "2026-10-21T00:00:00"
       );
 
 
@@ -1735,7 +2018,7 @@
           )
           .innerHTML =
 
-          "1. YILIMIZ KUTLU OLSUN AŞKİTOMMM ❤️";
+          "5. AYIMIZ KUTLU OLSUN AŞKİTOMMM ❤️";
 
 
         return;
@@ -1761,6 +2044,7 @@
         );
 
 
+
       const hours =
 
         Math.floor(
@@ -1779,6 +2063,7 @@
         );
 
 
+
       const minutes =
 
         Math.floor(
@@ -1794,6 +2079,7 @@
           ) % 60
 
         );
+
 
 
       const seconds =
@@ -1843,6 +2129,45 @@
       1000
 
     );
+
+
+
+
+    /* ==========================
+       SÜRPRİZ MESAJ
+    ========================== */
+
+
+    function showSecret() {
+
+
+      const secretMessage =
+
+        document.getElementById(
+          "secretMessage"
+        );
+
+
+      const secretButton =
+
+        document.getElementById(
+          "secretButton"
+        );
+
+
+      secretMessage.classList.add(
+
+        "open"
+
+      );
+
+
+      secretButton.style.display =
+
+        "none";
+
+
+    }
 
 
   </script>
